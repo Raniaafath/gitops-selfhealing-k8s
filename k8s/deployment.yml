@@ -15,6 +15,7 @@ spec:
       containers:
       - name: gitops-demo
         image: ranyaa164/gitops-demo:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 8000
         livenessProbe:
