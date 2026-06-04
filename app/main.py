@@ -6,7 +6,7 @@ start_time = time.time()
 
 @app.get("/")
 def root():
-    return {"status": "ok", "service": "gitops-selfhealing-demo"}
+    return {"status": "ok", "service": "gitops-selfhealing-demo", "version": "v2"}
 
 @app.get("/health")
 def health():
