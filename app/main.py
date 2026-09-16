@@ -1,8 +1,11 @@
 from fastapi import FastAPI
+from prometheus_fastapi_instrumentator import Instrumentator
 import time
 
 app = FastAPI()
 start_time = time.time()
+
+Instrumentator().instrument(app).expose(app)
 
 @app.get("/")
 def root():

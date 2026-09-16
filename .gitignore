@@ -2,3 +2,16 @@ kubectl
 minikube-linux-amd64
 minikube
 *.exe
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+terraform/crash.log
+terraform/override.tf
+terraform/override.tf.json
+
+# Python
+__pycache__/
+*.pyc
